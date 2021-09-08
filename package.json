@@ -12,13 +12,26 @@
     "url": "https://github.com/wataru-chocola/remark-definition-list/issues"
   },
   "homepage": "https://github.com/wataru-chocola/remark-definition-list#readme",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "remark",
     "remark-plugin"
-  ]
+  ],
+  "dependencies": {
+    "mdast-util-definition-list": "^1.0.0",
+    "micromark-extension-definition-list": "^1.0.0"
+  },
+  "devDependencies": {
+    "rehype-stringify": "^9.0.2",
+    "remark-parse": "^10.0.0",
+    "remark-rehype": "^9.0.0",
+    "unified": "^10.1.0"
+  },
+  "peerDependencies": {
+    "unified": "^10.1.0"
+  }
 }
