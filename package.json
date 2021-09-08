@@ -11,9 +11,15 @@
   "bugs": {
     "url": "https://github.com/wataru-chocola/remark-definition-list/issues"
   },
-  "homepage": "https://github.com/wataru-chocola/remark-definition-list#readme",
+  "homepage": "https://github.com/wataru-chocola/remark-definition-list",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/*.js",
+    "lib/*.d.ts",
+    "!lib/*.test.js",
+    "!lib/*.test.d.ts"
+  ],
   "scripts": {
     "format": "prettier --write \"./**/*.{ts,json}\"",
     "lint": "eslint ./**/*.{ts}",
@@ -25,7 +31,8 @@
   },
   "keywords": [
     "remark",
-    "remark-plugin"
+    "remark-plugin",
+    "markdown"
   ],
   "dependencies": {
     "mdast-util-definition-list": "^1.0.1",
