@@ -31,7 +31,8 @@
   },
   "keywords": [
     "remark",
-    "remark-plugin"
+    "remark-plugin",
+    "markdown"
   ],
   "dependencies": {
     "mdast-util-definition-list": "^1.0.1",
