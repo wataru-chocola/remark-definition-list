@@ -4,7 +4,7 @@ import type { Processor } from 'unified';
 
 export { defListHastHandlers } from 'mdast-util-definition-list';
 
-export function remarkDefinitionList(this: Processor) {
+export function remarkDefinitionList(this: Processor): void {
   const data = this.data();
 
   add('micromarkExtensions', defList);

@@ -28,7 +28,7 @@
     "remark-plugin"
   ],
   "dependencies": {
-    "mdast-util-definition-list": "^1.0.0",
+    "mdast-util-definition-list": "^1.0.1",
     "micromark-extension-definition-list": "^1.0.0"
   },
   "devDependencies": {
@@ -43,7 +43,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "jest": "^27.1.0",
-    "mdast-util-to-markdown": "^1.2.1",
     "prettier": "^2.3.2",
     "rehype-stringify": "^9.0.2",
     "remark-parse": "^10.0.0",
@@ -53,6 +52,7 @@
     "unified": "^10.1.0"
   },
   "peerDependencies": {
+    "remark-parse": "^10.0.0",
     "unified": "^10.1.0"
   }
 }
