@@ -2,7 +2,7 @@ import { remarkDefinitionList, defListHastHandlers } from './index';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
-import remarkStringify from 'rehype-stringify';
+import rehypeStringify from 'rehype-stringify';
 
 const process = (md: string) =>
   unified()
@@ -11,7 +11,7 @@ const process = (md: string) =>
     .use(remarkRehype, {
       handlers: Object.assign({}, defListHastHandlers),
     })
-    .use(remarkStringify)
+    .use(rehypeStringify)
     .process(md);
 
 test('basic syntax', () => {
