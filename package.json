@@ -15,7 +15,13 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"./**/*.{ts,json}\"",
+    "lint": "eslint ./**/*.{ts}",
+    "lint-fix": "eslint --fix ./**/*.{ts} && prettier --write ./**/*.{ts,json}",
+    "test": "npm run build && jest 'test\\.js' --testPathIgnorePatterns=\"/node_modules/\"",
+    "build": "npm run clean && tsc",
+    "prepack": "npm run build",
+    "clean": "rimraf index.js index.test.js lib/*.js"
   },
   "keywords": [
     "remark",
@@ -26,9 +32,24 @@
     "micromark-extension-definition-list": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "babel-jest": "^27.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.1.0",
+    "mdast-util-to-markdown": "^1.2.1",
+    "prettier": "^2.3.2",
     "rehype-stringify": "^9.0.2",
     "remark-parse": "^10.0.0",
     "remark-rehype": "^9.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.2",
     "unified": "^10.1.0"
   },
   "peerDependencies": {

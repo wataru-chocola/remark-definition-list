@@ -25,7 +25,15 @@ Apple
 Orange
 :   The fruit of an evergreen tree of the genus Citrus.
 `;
-  const html = `
-`;
-  expect(process(md)).toBe(html);
+  const html = `<p>Test for defList.</p>
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.
+</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.
+</dd>
+</dl>`;
+  process(md).then((result) => expect(result.value).toBe(html));
 });
