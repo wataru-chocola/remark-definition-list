@@ -22,3 +22,5 @@ export function remarkDefinitionList(this: Processor): void {
     list.push(value);
   }
 }
+
+export default remarkDefinitionList;
