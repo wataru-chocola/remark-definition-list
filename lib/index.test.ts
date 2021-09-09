@@ -1,4 +1,5 @@
-import { remarkDefinitionList, defListHastHandlers } from './index';
+import { defListHastHandlers } from './index';
+import remarkDefinitionList from './index';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';

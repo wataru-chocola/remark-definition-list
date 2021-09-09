@@ -23,7 +23,7 @@ $ npm install remark-definition-list
 ## Use
 
 ```typescript
-import { remarkDefinitionList, defListHastHandlers } from './index';
+import { remarkDefinitionList, defListHastHandlers } from 'remark-definition-list';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
