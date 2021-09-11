@@ -1,5 +1,12 @@
 {
   "extends": [
-    "config:base"
-  ]
+    "config:base",
+    "config:js-lib"
+  ],
+  "packageRules": [{
+    "matchDepTypes": [
+      "devDependencies"
+    ],
+    "extends": ["schedule:monthly"]
+  }]
 }
