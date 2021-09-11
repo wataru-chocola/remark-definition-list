@@ -1,5 +1,7 @@
 # remark-definition-list
 
+[![Node.js CI](https://github.com/wataru-chocola/remark-definition-list/actions/workflows/node.js.yml/badge.svg)](https://github.com/wataru-chocola/remark-definition-list/actions/workflows/node.js.yml)
+
 [remark] plugin to support definition list
 
 ## Feature
