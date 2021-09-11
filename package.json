@@ -14,6 +14,7 @@
   "homepage": "https://github.com/wataru-chocola/remark-definition-list",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "type": "module",
   "files": [
     "lib/*.js",
     "lib/*.d.ts",
@@ -24,7 +25,7 @@
     "format": "prettier --write \"./**/*.{ts,json}\"",
     "lint": "eslint ./**/*.{ts}",
     "lint-fix": "eslint --fix ./**/*.{ts} && prettier --write ./**/*.{ts,json}",
-    "test": "npm run build && jest 'test\\.js' --testPathIgnorePatterns=\"/node_modules/\"",
+    "test": "npm run build && NODE_OPTIONS=--experimental-vm-modules jest 'test\\.js' --testPathIgnorePatterns=\"/node_modules/\"",
     "build": "npm run clean && tsc",
     "prepack": "npm run build",
     "clean": "rimraf index.js index.test.js lib/*.js"
@@ -39,13 +40,10 @@
     "micromark-extension-definition-list": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
     "@babel/plugin-transform-modules-commonjs": "^7.15.4",
-    "@babel/preset-env": "^7.15.4",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
-    "babel-jest": "^27.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
