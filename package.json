@@ -47,7 +47,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.24.2",
     "jest": "27.1.1",
-    "prettier": "2.4.0",
+    "prettier": "2.4.1",
     "rehype-stringify": "9.0.2",
     "remark-parse": "10.0.0",
     "remark-rehype": "9.0.0",
