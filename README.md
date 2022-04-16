@@ -47,7 +47,10 @@ const html = unified()
   .use(remarkParse)
   .use(remarkDefinitionList)
   .use(remarkRehype, {
-    handlers: Object.assign({}, defListHastHandlers),
+    handlers: {
+      // any other handlers
+      ...defListHastHandlers,
+    }
   })
   .use(rehypeStringify)
   .process(md);
