@@ -36,7 +36,7 @@
     "markdown"
   ],
   "dependencies": {
-    "mdast-util-definition-list": "^1.1.0",
+    "mdast-util-definition-list": "^1.2.0",
     "micromark-extension-definition-list": "^1.2.0"
   },
   "devDependencies": {
@@ -50,7 +50,7 @@
     "prettier": "2.7.1",
     "rehype-stringify": "9.0.3",
     "remark-parse": "10.0.1",
-    "remark-rehype": "9.1.0",
+    "remark-rehype": "10.1.0",
     "rimraf": "3.0.2",
     "typescript": "4.8.3",
     "unified": "10.1.2"
