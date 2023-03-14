@@ -7,6 +7,7 @@ import type { Processor } from 'unified';
 import type { Options as _NoUse } from 'remark-stringify';
 
 export { defListHastHandlers } from 'mdast-util-definition-list';
+export { defListHastToMdast } from 'hast-util-definition-list';
 
 export function remarkDefinitionList(this: Processor): void {
   const data = this.data();
