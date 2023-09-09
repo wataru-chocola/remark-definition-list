@@ -36,5 +36,6 @@ the family Rosaceae.
 <dd>The fruit of an evergreen tree of the genus Citrus.
 </dd>
 </dl>`;
+  // eslint-disable-next-line @typescript-eslint/no-floating-promises
   process(md).then((result) => expect(result.value).toBe(html));
 });
