@@ -38,8 +38,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   rehype-stringify:
-    specifier: 9.0.3
-    version: 9.0.3
+    specifier: 9.0.4
+    version: 9.0.4
   remark-parse:
     specifier: 10.0.2
     version: 10.0.2
@@ -3760,8 +3760,8 @@ packages:
       set-function-name: 2.0.1
     dev: true
 
-  /rehype-stringify@9.0.3:
-    resolution: {integrity: sha512-kWiZ1bgyWlgOxpqD5HnxShKAdXtb2IUljn3hQAhySeak6IOQPPt6DeGnsIh4ixm7yKJWzm8TXFuC/lPfcWHJqw==}
+  /rehype-stringify@9.0.4:
+    resolution: {integrity: sha512-Uk5xu1YKdqobe5XpSskwPvo1XeHUUucWEQSl8hTrXt5selvca1e8K1EZ37E6YoZ4BT8BCqCdVfQW7OfHfthtVQ==}
     dependencies:
       '@types/hast': 2.3.6
       hast-util-to-html: 8.0.4
