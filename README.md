@@ -24,6 +24,8 @@ $ npm install remark-definition-list
 
 ## Use
 
+## Markdown -> HTML
+
 ```typescript
 import { remarkDefinitionList, defListHastHandlers } from 'remark-definition-list';
 import { unified } from 'unified';
@@ -43,7 +45,7 @@ Orange
 `;
 
 
-const html = unified()
+const html = await unified()
   .use(remarkParse)
   .use(remarkDefinitionList)
   .use(remarkRehype, {
@@ -54,4 +56,36 @@ const html = unified()
   })
   .use(rehypeStringify)
   .process(md);
+```
+
+## HTML -> Markdown
+
+```typescript
+import { remarkDefinitionList, defListHastToMdast } from 'remark-definition-list';
+import { unified } from 'unified';
+
+import rehypeParse from 'rehype-parse';
+import rehypeRemark from 'rehype-remark';
+import remarkStringify from 'remark-stringify';
+
+const html = `
+<p>Test for defList.</p>
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.
+</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.
+</dd>
+</dl>`;
+
+const html2md = await unified()
+  .use(rehypeParse, { fragment: true })
+  .use(rehypeRemark, {
+    handlers: defListHastToMdast,
+  })
+  .use(remarkDefinitionList)
+  .use(remarkStringify)
+  .process(html);
 ```
