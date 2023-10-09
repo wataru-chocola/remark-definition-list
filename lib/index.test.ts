@@ -1,3 +1,5 @@
+import { test, expect } from 'vitest';
+
 import { defListHastHandlers } from './index';
 import remarkDefinitionList from './index';
 import { unified } from 'unified';
