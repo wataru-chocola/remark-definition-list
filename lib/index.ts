@@ -2,25 +2,22 @@ import { defListFromMarkdown, defListToMarkdown } from 'mdast-util-definition-li
 import { defList } from 'micromark-extension-definition-list';
 import type { Processor } from 'unified';
 
+// HACK: load remark-stringify types.
+// remark-stringify defines Data.toMarkdownExtensions.
+import type { Options as _NoUse } from 'remark-stringify';
+
 export { defListHastHandlers } from 'mdast-util-definition-list';
 
 export function remarkDefinitionList(this: Processor): void {
   const data = this.data();
 
-  add('micromarkExtensions', defList);
-  add('fromMarkdownExtensions', defListFromMarkdown);
-  add('toMarkdownExtensions', defListToMarkdown);
+  const micromarkExtensions = data.micromarkExtensions ?? (data.micromarkExtensions = []);
+  const fromMarkdownExtensions = data.fromMarkdownExtensions ?? (data.fromMarkdownExtensions = []);
+  const toMarkdownExtensions = data.toMarkdownExtensions ?? (data.toMarkdownExtensions = []);
 
-  function add(field: string, value: any) {
-    if (data[field] == null) {
-      data[field] = [];
-    }
-    const list = data[field];
-    if (!(list instanceof Array)) {
-      throw new Error(`expect data[${field}] is array`);
-    }
-    list.push(value);
-  }
+  micromarkExtensions.push(defList);
+  fromMarkdownExtensions.push(defListFromMarkdown);
+  toMarkdownExtensions.push(defListToMarkdown);
 }
 
 export default remarkDefinitionList;
