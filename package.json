@@ -38,7 +38,7 @@
     "markdown"
   ],
   "dependencies": {
-    "mdast-util-definition-list": "^1.4.0",
+    "mdast-util-definition-list": "^2.0.0",
     "micromark-extension-definition-list": "^1.5.0"
   },
   "devDependencies": {
