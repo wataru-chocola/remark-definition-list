@@ -27,6 +27,7 @@
     "format": "prettier --write \"./**/*.{ts,json}\"",
     "lint": "eslint './**/*.ts'",
     "lint-fix": "eslint --fix './**/*.{ts}' && prettier --write ./**/*.{ts,json}",
+    "typecheck": "tsc",
     "test": "vitest run .js",
     "test:dev": "npm run clean && vitest",
     "build": "npm run clean && tsc",
@@ -43,9 +44,9 @@
     "micromark-extension-definition-list": "^2.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "6.6.0",
-    "@typescript-eslint/parser": "6.6.0",
-    "eslint": "8.49.0",
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
+    "eslint": "8.51.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.28.1",
     "prettier": "3.0.3",
@@ -53,8 +54,8 @@
     "remark-parse": "11.0.0",
     "remark-rehype": "11.0.0",
     "remark-stringify": "^11.0.0",
-    "rimraf": "3.0.2",
-    "typescript": "5.1.3",
+    "rimraf": "5.0.5",
+    "typescript": "5.2.2",
     "unified": "11.0.3",
     "vitest": "^0.34.6"
   }
