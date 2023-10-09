@@ -1,7 +1,7 @@
 {
   "packageManager": "pnpm@8.8.0",
   "name": "remark-definition-list",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "remark plugin to support definition list",
   "author": "Wataru Watanabe",
   "license": "MIT",
