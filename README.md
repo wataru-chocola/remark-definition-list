@@ -24,7 +24,7 @@ $ npm install remark-definition-list
 
 ## Use
 
-## Markdown -> HTML
+### Markdown -> HTML
 
 ```typescript
 import { remarkDefinitionList, defListHastHandlers } from 'remark-definition-list';
@@ -58,7 +58,7 @@ const html = await unified()
   .process(md);
 ```
 
-## HTML -> Markdown
+### HTML -> Markdown
 
 ```typescript
 import { remarkDefinitionList, defListHastToMdast } from 'remark-definition-list';
