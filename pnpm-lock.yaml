@@ -35,10 +35,10 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   rehype-parse:
-    specifier: ^9.0.0
+    specifier: 9.0.0
     version: 9.0.0
   rehype-remark:
-    specifier: ^10.0.0
+    specifier: 10.0.0
     version: 10.0.0
   rehype-stringify:
     specifier: 10.0.0
@@ -50,13 +50,13 @@ devDependencies:
     specifier: 11.0.0
     version: 11.0.0
   remark-stringify:
-    specifier: ^11.0.0
+    specifier: 11.0.0
     version: 11.0.0
   rimraf:
     specifier: 5.0.5
     version: 5.0.5
   ts-dedent:
-    specifier: ^2.2.0
+    specifier: 2.2.0
     version: 2.2.0
   typescript:
     specifier: 5.2.2
@@ -65,7 +65,7 @@ devDependencies:
     specifier: 11.0.3
     version: 11.0.3
   vitest:
-    specifier: ^0.34.6
+    specifier: 0.34.6
     version: 0.34.6
 
 packages:
@@ -403,7 +403,7 @@ packages:
   /@types/hast@3.0.1:
     resolution: {integrity: sha512-hs/iBJx2aydugBQx5ETV3ZgeSS0oIreQrFJ4bjBl0XvM4wAmDjFEALY7p0rTSLt2eL+ibjRAAs9dTPiCLtmbqQ==}
     dependencies:
-      '@types/unist': 2.0.8
+      '@types/unist': 3.0.0
 
   /@types/json-schema@7.0.13:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
@@ -416,7 +416,7 @@ packages:
   /@types/mdast@4.0.1:
     resolution: {integrity: sha512-IlKct1rUTJ1T81d8OHzyop15kGv9A/ff7Gz7IJgrk6jDb4Udw77pCJ+vq8oxZf4Ghpm+616+i1s/LNg/Vh7d+g==}
     dependencies:
-      '@types/unist': 2.0.8
+      '@types/unist': 3.0.0
 
   /@types/ms@0.7.32:
     resolution: {integrity: sha512-xPSg0jm4mqgEkNhowKgZFBNtwoEwF6gJ4Dhww+GFpm3IgtNseHQZ5IqdNwnquZEoANxyDAKDRAdVo4Z72VvD/g==}
@@ -428,9 +428,6 @@ packages:
   /@types/semver@7.5.3:
     resolution: {integrity: sha512-OxepLK9EuNEIPxWNME+C6WwbRAOOI2o2BaQEGzz5Lu2e4Z5eDnEo+/aVEDMIXywoJitJ7xWd641wrGLZdtwRyw==}
     dev: true
-
-  /@types/unist@2.0.8:
-    resolution: {integrity: sha512-d0XxK3YTObnWVp6rZuev3c49+j4Lo8g4L1ZRm9z5L0xpoZycUPshHgczK5gsUMaZOstjVYYi09p5gYvUtfChYw==}
 
   /@types/unist@3.0.0:
     resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
