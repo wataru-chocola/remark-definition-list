@@ -1,7 +1,5 @@
 {
-  "include": [
-    "./**/*.ts"
-  ],
+  "include": ["./**/*.ts"],
   "compilerOptions": {
     "target": "es2018",
     "strict": true,
@@ -9,6 +7,6 @@
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "Bundler"
   }
 }
