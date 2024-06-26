@@ -1,5 +1,5 @@
 {
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.4.0",
   "name": "remark-definition-list",
   "version": "2.0.0",
   "description": "remark plugin to support definition list",
