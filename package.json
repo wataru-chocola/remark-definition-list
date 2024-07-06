@@ -61,7 +61,7 @@
     "rimraf": "5.0.7",
     "ts-dedent": "2.2.0",
     "typescript": "5.5.3",
-    "unified": "11.0.4",
+    "unified": "11.0.5",
     "vitest": "1.6.0"
   }
 }
