@@ -1,12 +1,14 @@
 {
-  "extends": [
-    "config:base",
-    "config:js-lib"
-  ],
-  "packageRules": [{
-    "matchDepTypes": [
-      "devDependencies"
-    ],
-    "extends": ["schedule:monthly"]
-  }]
+  "extends": ["config:base", "config:js-lib", ":automergePatch"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "extends": ["schedule:quarterly"]
+    },
+    {
+      "matchDepTypes": ["packageManager"],
+      "matchPackageNames": ["pnpm"],
+      "extends": ["schedule:quarterly"]
+    }
+  ]
 }
