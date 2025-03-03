@@ -20,6 +20,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - run: npm install -g corepack@latest
       - run: corepack enable pnpm
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
