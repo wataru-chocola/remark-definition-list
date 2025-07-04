@@ -40,8 +40,8 @@ importers:
         specifier: 9.0.1
         version: 9.0.1
       rehype-remark:
-        specifier: 10.0.0
-        version: 10.0.0
+        specifier: 10.0.1
+        version: 10.0.1
       rehype-stringify:
         specifier: 10.0.1
         version: 10.0.1
@@ -385,9 +385,6 @@ packages:
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
-
-  '@types/hast@3.0.1':
-    resolution: {integrity: sha512-hs/iBJx2aydugBQx5ETV3ZgeSS0oIreQrFJ4bjBl0XvM4wAmDjFEALY7p0rTSLt2eL+ibjRAAs9dTPiCLtmbqQ==}
 
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
@@ -1692,8 +1689,8 @@ packages:
   rehype-parse@9.0.1:
     resolution: {integrity: sha512-ksCzCD0Fgfh7trPDxr2rSylbwq9iYDkSn8TCDmEJ49ljEUBxDVCzCHv7QNzZOfODanX4+bWQ4WZqLCRWYLfhag==}
 
-  rehype-remark@10.0.0:
-    resolution: {integrity: sha512-+aDXY/icqMFOafJQomVjxe3BAP7aR3lIsQ3GV6VIwpbCD2nvNFOXjGvotMe5p0Ny+Gt6L13DhEf/FjOOpTuUbQ==}
+  rehype-remark@10.0.1:
+    resolution: {integrity: sha512-EmDndlb5NVwXGfUa4c9GPK+lXeItTilLhE6ADSaQuHr4JUlKw9MidzGzx4HpqZrNCt6vnHmEifXQiiA+CEnjYQ==}
 
   rehype-stringify@10.0.1:
     resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
@@ -2338,10 +2335,6 @@ snapshots:
   '@types/estree@1.0.5': {}
 
   '@types/estree@1.0.6': {}
-
-  '@types/hast@3.0.1':
-    dependencies:
-      '@types/unist': 3.0.0
 
   '@types/hast@3.0.4':
     dependencies:
@@ -3411,13 +3404,13 @@ snapshots:
   hast-util-to-mdast@10.1.0:
     dependencies:
       '@types/hast': 3.0.4
-      '@types/mdast': 4.0.1
+      '@types/mdast': 4.0.3
       '@ungap/structured-clone': 1.2.0
       hast-util-phrasing: 3.0.1
       hast-util-to-html: 9.0.0
       hast-util-to-text: 4.0.0
       hast-util-whitespace: 3.0.0
-      mdast-util-phrasing: 4.0.0
+      mdast-util-phrasing: 4.1.0
       mdast-util-to-hast: 13.0.2
       mdast-util-to-string: 4.0.0
       rehype-minify-whitespace: 6.0.0
@@ -4046,10 +4039,10 @@ snapshots:
       hast-util-from-html: 2.0.1
       unified: 11.0.5
 
-  rehype-remark@10.0.0:
+  rehype-remark@10.0.1:
     dependencies:
-      '@types/hast': 3.0.1
-      '@types/mdast': 4.0.1
+      '@types/hast': 3.0.4
+      '@types/mdast': 4.0.3
       hast-util-to-mdast: 10.1.0
       unified: 11.0.5
       vfile: 6.0.1
@@ -4468,7 +4461,7 @@ snapshots:
 
   vfile@6.0.1:
     dependencies:
-      '@types/unist': 3.0.0
+      '@types/unist': 3.0.2
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
