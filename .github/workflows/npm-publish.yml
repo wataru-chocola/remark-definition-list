@@ -16,7 +16,7 @@ jobs:
       - run: corepack enable pnpm
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - run: pnpm install
       - run: pnpm run --if-present build
       - run: pnpm test
@@ -30,7 +30,7 @@ jobs:
       - run: corepack enable pnpm
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           registry-url: https://registry.npmjs.org/
       - run: pnpm install
       - run: pnpm publish --no-git-checks
