@@ -19,7 +19,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - run: npm install -g corepack@latest
       - run: corepack enable pnpm
       - name: Use Node.js ${{ matrix.node-version }}
