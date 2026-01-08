@@ -50,7 +50,7 @@
     "eslint": "9.36.0",
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
-    "prettier": "3.6.2",
+    "prettier": "3.7.4",
     "rehype-parse": "9.0.1",
     "rehype-remark": "10.0.1",
     "rehype-stringify": "10.0.1",
