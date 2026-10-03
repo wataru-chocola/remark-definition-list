@@ -8,8 +8,8 @@
       "extends": ["schedule:quarterly"]
     },
     {
-      "matchDepTypes": ["packageManager"],
       "matchPackageNames": ["pnpm"],
+      "groupName": "pnpm",
       "extends": ["schedule:quarterly"]
     },
     {
