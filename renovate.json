@@ -11,6 +11,10 @@
       "matchDepTypes": ["packageManager"],
       "matchPackageNames": ["pnpm"],
       "extends": ["schedule:quarterly"]
+    },
+    {
+      "matchPackageNames": ["oxlint", "oxlint-tsgolint", "oxfmt"],
+      "groupName": "oxc"
     }
   ]
 }
