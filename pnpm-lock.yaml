@@ -52,8 +52,8 @@ importers:
         specifier: 6.0.1
         version: 6.0.1
       ts-dedent:
-        specifier: 2.2.0
-        version: 2.2.0
+        specifier: 2.3.0
+        version: 2.3.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -1321,8 +1321,8 @@ packages:
   trough@2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
 
-  ts-dedent@2.2.0:
-    resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
+  ts-dedent@2.3.0:
+    resolution: {integrity: sha512-JfJeIHke7y2egdGGgRAvpCwYFUsHlM2gPcrVOxFkznt/4uzQ7HFmvE63iFHVLBJNDuyDOQgijDK/tXH/f6Msjg==}
     engines: {node: '>=6.10'}
 
   typescript@6.0.3:
@@ -2366,7 +2366,7 @@ snapshots:
       micromark-util-chunked: 2.0.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
-      ts-dedent: 2.2.0
+      ts-dedent: 2.3.0
 
   micromark-factory-destination@2.0.0:
     dependencies:
@@ -2746,7 +2746,7 @@ snapshots:
 
   trough@2.1.0: {}
 
-  ts-dedent@2.2.0: {}
+  ts-dedent@2.3.0: {}
 
   typescript@6.0.3: {}
 
