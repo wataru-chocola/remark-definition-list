@@ -24,9 +24,10 @@
     "!lib/*.test.d.ts"
   ],
   "scripts": {
-    "format": "prettier --write \"./**/*.{ts,json}\"",
-    "lint": "eslint './**/*.ts'",
-    "lint-fix": "eslint --fix './**/*.{ts}' && prettier --write ./**/*.{ts,json}",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint --type-aware",
+    "lint-fix": "oxlint --type-aware --fix && oxfmt",
     "typecheck": "tsc",
     "test": "vitest run .js",
     "test:dev": "npm run clean && vitest",
@@ -45,12 +46,10 @@
     "micromark-extension-definition-list": "^2.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "10.0.1",
     "@types/node": "24.9.2",
-    "eslint": "10.3.0",
-    "eslint-import-resolver-typescript": "4.4.5",
-    "eslint-plugin-import": "2.32.0",
-    "prettier": "3.8.5",
+    "oxfmt": "0.71.0",
+    "oxlint": "1.86.0",
+    "oxlint-tsgolint": "7.0.2003",
     "rehype-parse": "9.0.1",
     "rehype-remark": "10.0.1",
     "rehype-stringify": "10.0.1",
@@ -60,7 +59,6 @@
     "rimraf": "6.0.1",
     "ts-dedent": "2.2.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.44.1",
     "unified": "11.0.5",
     "vitest": "4.1.11"
   }
