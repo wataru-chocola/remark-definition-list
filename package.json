@@ -46,7 +46,7 @@
     "micromark-extension-definition-list": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "24.9.2",
+    "@types/node": "24.19.0",
     "oxfmt": "0.71.0",
     "oxlint": "1.86.0",
     "oxlint-tsgolint": "7.0.2003",
